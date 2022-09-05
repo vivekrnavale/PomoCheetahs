@@ -9,4 +9,13 @@
     font-size: 32px;
     line-height: 1.5em;
     font-family: 'Fidelity Sans', Arial, sans-serif;
+    box-shadow: 0 6px #999;
+}
+
+.button:hover {background-color: #4e7501}
+
+.button:active {
+  background-color: #568200;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
 }
