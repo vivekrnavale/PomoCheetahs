@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterBarComponent implements OnInit {
 
+  content: string = "Copyright 1998-2021 FMR LLC. All Rights Reserved."
   constructor() { }
 
   ngOnInit(): void {

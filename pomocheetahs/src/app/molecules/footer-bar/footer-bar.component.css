@@ -1,0 +1,7 @@
+.navigation {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    max-width: 62.5em;
+    display: block;
+}

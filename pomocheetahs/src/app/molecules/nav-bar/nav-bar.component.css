@@ -1,0 +1,12 @@
+.navigation {
+    background-color: #f2f2f2;
+    max-width: 62.4em;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.item {
+    display: inline-block;
+}

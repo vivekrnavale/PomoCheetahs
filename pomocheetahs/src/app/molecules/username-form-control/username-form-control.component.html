@@ -1,1 +1,7 @@
-<p>username-form-control works!</p>
+<sc-atom-form-label [label]=label> </sc-atom-form-label>
+
+<input #box (keyup)="onKey(box.value)" id="textinput" [style.border-color]="!matched?'red':null" name="userName">
+
+<div *ngIf="!matched" class="invalidUsername">
+    Invalid Username - Must contain only between 3 and 18 letters, numbers, underscores or hyphens.
+</div>
