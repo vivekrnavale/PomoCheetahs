@@ -11,6 +11,12 @@ import { NavBarLinkComponent } from './atoms/nav-bar-link/nav-bar-link.component
 import { ParagraphTextComponent } from './atoms/paragraph-text/paragraph-text.component';
 import { TextBoxPasswordComponent } from './atoms/text-box-password/text-box-password.component';
 import { TextBoxStandardComponent } from './atoms/text-box-standard/text-box-standard.component';
+import { FooterBarComponent } from './molecules/footer-bar/footer-bar.component';
+import { HeaderBarComponent } from './molecules/header-bar/header-bar.component';
+import { NavBarComponent } from './molecules/nav-bar/nav-bar.component';
+import { PageTitleComponent } from './molecules/page-title/page-title.component';
+import { PasswordFormControlComponent } from './molecules/password-form-control/password-form-control.component';
+import { UsernameFormControlComponent } from './molecules/username-form-control/username-form-control.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { TextBoxStandardComponent } from './atoms/text-box-standard/text-box-sta
     NavBarLinkComponent,
     ParagraphTextComponent,
     TextBoxPasswordComponent,
-    TextBoxStandardComponent
+    TextBoxStandardComponent,
+    FooterBarComponent,
+    HeaderBarComponent,
+    NavBarComponent,
+    PageTitleComponent,
+    PasswordFormControlComponent,
+    UsernameFormControlComponent
   ],
   imports: [
     BrowserModule
