@@ -18,34 +18,14 @@ export class PasswordFormControlComponent implements OnInit {
   //var reg = /(?=.*[a-z]+.*)(?=.*[A-Z]+.*)(?=.*\d+.*)(?=.*[-[!“#$%&'()*+,-./:;<=>?@[\]^_`{|}~]+.*)(?!.*(.)\1\1\1.*)(?!.*(.{3}).*\2.*).{8,256}$/;
   // reg = /^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()+=[]{}|:;"><,./?])[a-zA-Z0-9!@#$%^&*()+=[]{}|:;"><,./?]{10,16}$/;
   onKey(value: string) {
-    //this.values += value + ' | ';
-    //alert(value);
-    //console.log(value);
-    // if (value.length<6 || value.length>24 || value.includes('!') || value.includes('@')
-    //   || value.includes('#') || value.includes('$') || value.includes('%') ||
-    //    value.includes('^') || value.includes('&') || value.includes('*') || value.includes('(')
-    //    || value.includes(')') || value.includes('+') || value.includes('=')
-    //    || value.includes('[') || value.includes(']') || value.includes('{') || value.includes('}')
-    //    || value.includes('|') || value.includes(':') || value.includes(';') || value.includes('"')
-    //    || value.includes('>') || value.includes('<') || value.includes(',') || value.includes('.')
-    //    || value.includes('/') || value.includes('?') ){
-    // if (!reg.test(value))
-    //   this.matched =false;
-    //   console.log("pp wrong");
-    //   //alert("lkttl");
-    //   //document.querySelector("input").style.border = "1px solid red";
-    // }
-    // else{
-    //   //alert("lkl");
-    //   this.matched = true;
-    //   console.log("pp right");
-    //   this.new1.emit(value);
-    // }
+   
+    
     var regex = new RegExp('^[a-zA-Z0-9-_-]{6,24}$');
 
-    if (regex.test(inputvalue)) {
+    if (regex.test(value)) {
       this.matched = true;
       this.new1.emit(value);
+      console.log(value + " matched");
 
       // errorBox?.style.display= "none"
 
