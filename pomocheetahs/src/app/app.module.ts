@@ -17,6 +17,8 @@ import { NavBarComponent } from './molecules/nav-bar/nav-bar.component';
 import { PageTitleComponent } from './molecules/page-title/page-title.component';
 import { PasswordFormControlComponent } from './molecules/password-form-control/password-form-control.component';
 import { UsernameFormControlComponent } from './molecules/username-form-control/username-form-control.component';
+import { LoginFormComponent } from './organisms/login-form/login-form.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { UsernameFormControlComponent } from './molecules/username-form-control/
     NavBarComponent,
     PageTitleComponent,
     PasswordFormControlComponent,
-    UsernameFormControlComponent
+    UsernameFormControlComponent,
+    LoginFormComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule

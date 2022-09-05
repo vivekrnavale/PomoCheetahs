@@ -1,0 +1,12 @@
+p {
+    font-family: 'Fidelity-sans', Arial, sans-serif;
+    line-height: 1.5em;
+    font-size: 32px;
+    background-color: #568200;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    max-width: 62.5em;
+    box-sizing: content-box;
+}
