@@ -1,6 +1,6 @@
 <sc-atom-form-label [label]=label> </sc-atom-form-label>
 
-<input #box (keyup)="onKey(box.value)" id="textinput" [style.border-color]="!matched?'red':null" name="userName">
+<input #box (keyup)="onKey(box.value)" id="textinput" type="text" [style.border]="!matched?'2px solid red':'2px solid black'" name="userName">
 
 <div *ngIf="!matched" class="invalidUsername">
     Invalid Username - Must contain only between 3 and 18 letters, numbers, underscores or hyphens.
