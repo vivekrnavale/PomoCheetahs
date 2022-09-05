@@ -19,7 +19,7 @@ describe('LinkComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create forgot pwd link ', () => {
     expect(component).toBeTruthy();
   });
 });

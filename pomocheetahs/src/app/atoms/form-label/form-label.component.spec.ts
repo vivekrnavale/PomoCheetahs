@@ -19,7 +19,7 @@ describe('FormLabelComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create a form label ', () => {
     expect(component).toBeTruthy();
   });
 });

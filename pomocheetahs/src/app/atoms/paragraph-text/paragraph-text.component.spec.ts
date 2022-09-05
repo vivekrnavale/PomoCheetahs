@@ -19,7 +19,7 @@ describe('ParagraphTextComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create a paragraph ', () => {
     expect(component).toBeTruthy();
   });
 });
