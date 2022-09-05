@@ -1,7 +1,7 @@
-.navigation {
-    margin-left: auto;
-    margin-right: auto;
+.navigation{
+    margin-bottom: auto;
+    margin-top: auto;
     padding: 0.5rem 1rem;
     max-width: 62.5em;
-    display: block;
-}
+    font-family: 'Fidelity Sans', arial, sans-serif;
+  }

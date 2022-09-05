@@ -1,4 +1,4 @@
-p {
+/* p {
     font-family: 'Fidelity-sans', Arial, sans-serif;
     line-height: 1.5em;
     font-size: 32px;
@@ -9,4 +9,12 @@ p {
     padding: 0.5rem 1rem;
     max-width: 62.5em;
     box-sizing: content-box;
-}
+} */
+
+header {
+    margin: 0 auto;
+    background-color: #568200;
+    padding: 0.5rem 1rem;
+    max-width: 62.5em; 
+  }
+  
