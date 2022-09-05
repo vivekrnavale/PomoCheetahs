@@ -22,4 +22,11 @@ describe('FooterBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have appropriate footer', () => {
+    const fixture = TestBed.createComponent(FooterBarComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(fixture.componentInstance.content).toContain('Copyright 1998-2021 FMR LLC. All Rights Reserved.')
+  })
 });
