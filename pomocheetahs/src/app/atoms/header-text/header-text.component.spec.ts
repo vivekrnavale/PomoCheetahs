@@ -19,7 +19,7 @@ describe('HeaderTextComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the header text', () => {
     expect(component).toBeTruthy();
   });
 });

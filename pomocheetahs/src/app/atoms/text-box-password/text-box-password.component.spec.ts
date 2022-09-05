@@ -19,7 +19,7 @@ describe('TextBoxPasswordComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create a password box ', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -20,7 +20,7 @@ describe('NavBarLinkComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create links for Navbar ', () => {
     expect(component).toBeTruthy();
   });
 

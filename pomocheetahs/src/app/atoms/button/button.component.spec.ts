@@ -19,7 +19,12 @@ describe('ButtonComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the login button ', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display Log In', ()=>{
+    const loginButton = fixture.debugElement.nativeElement as HTMLElement
+    expect(loginButton.querySelector('.button')?.innerHTML).toEqual("Log In")
   });
 });
