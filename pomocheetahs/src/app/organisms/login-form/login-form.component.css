@@ -1,0 +1,9 @@
+.form {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem 3rem 2rem 3rem;
+    max-width: 18rem;
+    border: 1px solid #ccc;
+}
