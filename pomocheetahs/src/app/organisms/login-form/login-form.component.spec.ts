@@ -2,6 +2,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/compiler';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, EventEmitter, Input, Output } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { findComponent } from 'src/app/findcomponent.function';
 
 import { LoginFormComponent } from './login-form.component';
 
@@ -13,13 +14,21 @@ describe('LoginFormComponent', () => {
     selector: 'sc-username-form-control',
     template: '<div></div>'
   })
+  class MockPasswordFCComponent {
+    @Output() newItemEvent = new EventEmitter<string>();
+    //constructor(private fb: FormBuilder) { }
+  }
+  @Component({
+    selector: 'sc-password-form-control',
+    template: '<div></div>'
+  })
   class MockUsernameFCComponent {
     @Output() newItemEvent = new EventEmitter<string>();
     //constructor(private fb: FormBuilder) { }
   }
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginFormComponent, MockUsernameFCComponent ],
+      declarations: [ LoginFormComponent, MockUsernameFCComponent, MockPasswordFCComponent ],
       
     })
     .compileComponents();
@@ -31,20 +40,27 @@ describe('LoginFormComponent', () => {
     fixture.detectChanges();
   });
 
+  
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
   it('should call displayUsername function with value fir ',()=>{
-    //fixture.detectChanges();
-    const bookForm = fixture.debugElement.query(By.css('sc-username-form-control')).componentInstance;
-    console.log(bookForm);
-    const input = bookForm.debugElement.query(By.css('input'));
-    let fieldTypeInput: HTMLInputElement;
+    //spyOn('displayUserName');
+    const counter = findComponent(fixture, 'sc-username-form-control');
+    counter.triggerEventHandler('newItemEvent','fir');
+    expect(component.username).toEqual('fir');
+   
+  
+  })
 
-    fieldTypeInput = input.nativeElement;
-    fieldTypeInput.value = 'fir';
-    input.triggerEventHandler('keyup', {});
-    expect("displayUserName").toHaveBeenCalledWith("fir");
+  it('should call displayPassword function with value first2 ',()=>{
+    //spyOn('displayUserName');
+    const counter = findComponent(fixture, 'sc-password-form-control');
+    counter.triggerEventHandler('new1','first2');
+    expect(component.password).toEqual('first2');
+   
+  
   })
 });
