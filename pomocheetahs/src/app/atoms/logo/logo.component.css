@@ -1,0 +1,8 @@
+p {
+    box-sizing: content-box;
+    font-family: 'Fidelity-sans', Arial, sans-serif;
+    line-height: 1.5em;
+    font-size: 32px;
+    background-color: #568200;
+    color: #FFF;
+}

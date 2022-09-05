@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-paragraph-text',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paragraph-text.component.css']
 })
 export class ParagraphTextComponent implements OnInit {
+
+  @Input() content = "";
 
   constructor() { }
 

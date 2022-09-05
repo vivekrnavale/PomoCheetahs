@@ -1,0 +1,8 @@
+.textinput {
+    font-size: 18px;
+    line-height: 1.5em;
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    box-sizing: border-box;
+}

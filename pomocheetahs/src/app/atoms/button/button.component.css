@@ -1,0 +1,12 @@
+.button {
+    width: 100%;
+    display: block;
+    background-color: #568200;
+    color: white;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    align-content: center;
+    font-size: 32px;
+    line-height: 1.5em;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+}

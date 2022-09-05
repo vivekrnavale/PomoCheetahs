@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+/**************************************************************************
+  Note: You do not need to interact with this file for this Module 1 work,
+  which has no JS requirements for it.
+***************************************************************************/
+
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-form-label',
+  selector: 'sc-atom-form-label',
   templateUrl: './form-label.component.html',
-  styleUrls: ['./form-label.component.css']
+  styleUrls: ['./form-label.component.scss']
 })
-export class FormLabelComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class FormLabelComponent {
+  @Input() label: any;
 }

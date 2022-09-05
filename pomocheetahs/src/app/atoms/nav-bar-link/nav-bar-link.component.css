@@ -1,0 +1,25 @@
+#link {
+    width: 100%;
+    color: #356F95;
+    box-sizing: content-box;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+}
+
+a:visited {
+    /* visited link */
+    color: #5C0198;
+}
+
+a:hover {
+    /* mouse over link */
+    color: #000;
+    border-bottom: none;
+}
+
+a:active {
+    /* active link */
+    border: #ccc 1px dotted;
+}

@@ -1,0 +1,7 @@
+.button {
+    color: #000000;
+    box-sizing: content-box;
+    font-size: 32px;
+    line-height: 1.5em;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+}
