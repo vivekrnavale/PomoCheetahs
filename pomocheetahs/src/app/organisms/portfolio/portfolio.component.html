@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <td>Instrument ID</td>
+        <td>Quantity</td>
+        <td>Execution Price</td>
+        <td>Direction</td>
+        <td>Trade ID</td>
+        <td>Cash Value</td>
+    </thead>
+    <tbody *ngFor="let trade in trades">
+        <td>{{trade.instrumentId}}</td>
+        <td>{{trade.quantity}}</td>
+        <td>{{trade.executionPrice}}</td>
+        <td>{{trade.direction}}</td>
+        <td>{{trade.tradeId}}</td>
+        <td>{{trade.cashValue}}</td>
+    </tbody>
+</table>
