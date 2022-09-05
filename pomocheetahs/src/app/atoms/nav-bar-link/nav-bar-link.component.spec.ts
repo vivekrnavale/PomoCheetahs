@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { NavBarLinkComponent } from './nav-bar-link.component';
 
@@ -22,4 +23,12 @@ describe('NavBarLinkComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display smallchange in anchor tag',() => {
+    component.name = "smallchange";
+    fixture.detectChanges();
+    const input = fixture.debugElement.query(By.css('a'));
+    const anative = input.nativeElement as HTMLElement;
+    expect(anative.textContent).toEqual("smallchange");
+  })
 });
