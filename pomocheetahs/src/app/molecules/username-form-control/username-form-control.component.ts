@@ -10,14 +10,14 @@ import { Output, EventEmitter } from '@angular/core';
   styleUrls: ['./username-form-control.component.css'],
 })
 export class UsernameFormControlComponent implements OnInit {
-  @Output() newItemEvent = new EventEmitter<string>();
+  @Output() usrVerify = new EventEmitter<string>();
   //constructor(private fb: FormBuilder) { }
   label: string = 'Username';
   // values = '';
   matched: boolean = true;
   //reg = new RegExp(/[a-z]*/)
   addNewItem(value: string) {
-    this.newItemEvent.emit(value);
+    this.usrVerify.emit(value);
   }
   onKey(value: string) {
     if (
@@ -57,7 +57,7 @@ export class UsernameFormControlComponent implements OnInit {
     } else {
       //alert("lkl");
       //this.addNewItem(value);
-      this.newItemEvent.emit(value);
+      this.usrVerify.emit(value);
       this.matched = true;
       console.log('pp right');
     }
