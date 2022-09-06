@@ -6,7 +6,7 @@ import { User } from './models/user';
   providedIn: 'root'
 })
 export class LoginService {
-  users:User[] = [{username:"Joshua",password:"Awesome"},{username:"Admin",password:"Admin"}]
+  users:User[] = [{username:"Joshua",password:"Awesome"},{username:"Admin",password:"Admino"}]
   constructor() { }
 
   getUsers():Observable<User[]>{

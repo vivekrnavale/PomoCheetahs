@@ -1,11 +1,7 @@
-/* .pageForm {
-    padding: 4em 1em 4em 1em;
-    max-width: 62.5em;
-    margin : 0 auto;
-} */
 .pageForm {
-    max-width: 62.5em;
+    max-width: 100%;
     margin: auto;
+    overflow-x: hidden;
   }
   
   #form {
@@ -14,4 +10,7 @@
   
   #footer {
     border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 5px;
+    width: 99%;
   }

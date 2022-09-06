@@ -1,5 +1,36 @@
-table, tr, td {
-    border: 2px solid black;
-    padding: 3px;
-    font-family: 'Fidelity Sans', 'Arial', sans-serif;
+
+table, thead, tbody , td{
+    margin: auto;
+    align-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    margin-top: 2rem ;
+    width: 75%;
+}
+
+thead {
+    align-content: center;
+    vertical-align: middle;
+    height: 3rem;
+    background-color: #568200;
+    color: white;
+}
+
+tbody {
+    height: 2.5rem;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody:nth-child(even) {
+    background-color: rgb(241, 240, 240);
+}
+
+tbody:nth-child(odd) {
+    background-color: #ccc;
 }
