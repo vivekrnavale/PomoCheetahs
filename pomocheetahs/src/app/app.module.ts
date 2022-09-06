@@ -25,7 +25,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
-{path: 'portfolio', component: PortfolioComponent}]
+{path: 'portfolio', component: LandingPageComponent}]
 
 @NgModule({
   declarations: [

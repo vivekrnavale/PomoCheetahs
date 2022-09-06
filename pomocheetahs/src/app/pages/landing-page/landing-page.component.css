@@ -1,0 +1,17 @@
+/* .pageForm {
+    padding: 4em 1em 4em 1em;
+    max-width: 62.5em;
+    margin : 0 auto;
+} */
+.pageForm {
+    max-width: 62.5em;
+    margin: auto;
+  }
+  
+  #form {
+    margin: 4em 1em;
+  }
+  
+  #footer {
+    border-top: 1px solid #ccc;
+  }
