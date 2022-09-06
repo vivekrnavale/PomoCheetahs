@@ -19,6 +19,7 @@ export class LoginFormComponent implements OnInit {
   username: string = ""
   password: string = ""
   users: User[] = []
+  authenticated: boolean = false;
 
   displayUserName(value: string){
     this.username = value;
@@ -34,17 +35,18 @@ export class LoginFormComponent implements OnInit {
 
   public authenticate(): void {  
     this.users.forEach(creds => {
-      if(creds.password === this.password && creds.username === this.username)
-        this.router.navigateByUrl('portfolio')
-      else
+      if(creds.password === this.password && creds.username === this.username){
+        this.authenticated = true;
+      }
+      else{
         this.router.navigateByUrl('login')
+      }
 
-      console.log(this.password,creds.password)
-      console.log(this.password===creds.password)
-      console.log(this.username, creds.username)
-      console.log(this.username === creds.username)
-      console.log("final result",creds.password === this.password && creds.username === this.username )
+
     });
+    if(this.authenticated==true){
+      this.router.navigateByUrl('portfolio');
+    }
   }
 
 }
