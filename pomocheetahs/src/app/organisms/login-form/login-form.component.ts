@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { LoginService } from 'src/app/login.service';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'sc-login-form',
@@ -8,26 +10,41 @@ import { Router } from '@angular/router'
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private loginService:LoginService){}
 
   public ngOnInit(): void {
-    /* This component requires some JavaScript functionality. Please enter it within this ngOnInit() function. */
+    this.getUsers()
   }
-  username: any;
-  password: any;
+
+  username: string = ""
+  password: string = ""
+  users: User[] = []
 
   displayUserName(value: string){
     this.username = value;
-    //console.log(value);
   }
 
   displayPassword(value: string){
     this.password = value; 
-    //console.log(value);
   }
 
-  public submit(): void {   
-    this.router.navigateByUrl('portfolio');
+  getUsers(){
+    this.loginService.getUsers().subscribe(incomingData => this.users=incomingData)
+  }
+
+  public authenticate(): void {  
+    this.users.forEach(creds => {
+      if(creds.password === this.password && creds.username === this.username)
+        this.router.navigateByUrl('portfolio')
+      else
+        this.router.navigateByUrl('login')
+
+      console.log(this.password,creds.password)
+      console.log(this.password===creds.password)
+      console.log(this.username, creds.username)
+      console.log(this.username === creds.username)
+      console.log("final result",creds.password === this.password && creds.username === this.username )
+    });
   }
 
 }
