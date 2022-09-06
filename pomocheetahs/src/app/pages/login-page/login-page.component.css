@@ -4,8 +4,9 @@
     margin : 0 auto;
 } */
 .pageForm {
-    max-width: 62.5em;
+    max-width: 100%;
     margin: auto;
+    overflow-x: hidden;
   }
   
   #form {

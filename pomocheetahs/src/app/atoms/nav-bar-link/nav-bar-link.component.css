@@ -1,4 +1,4 @@
-#link {
+a {
     width: 100%;
     color: #356F95;
     box-sizing: content-box;
@@ -6,6 +6,7 @@
     font-size: 18px;
     line-height: 1.5em;
     font-family: 'Fidelity Sans', Arial, sans-serif;
+    cursor: pointer;
 }
 
 a:visited {
@@ -19,7 +20,7 @@ a:hover {
     border-bottom: none;
 }
 
-a:active {
+a:focus {
     /* active link */
     border: #ccc 1px dotted;
 }
