@@ -1,4 +1,4 @@
-p {
+div {
     box-sizing: content-box;
     font-family: 'Fidelity-sans', Arial, sans-serif;
     line-height: 1.5em;
@@ -6,4 +6,5 @@ p {
     background-color: #568200;
     color: #FFF;
     margin:0;
+    width: 100%;
 }
