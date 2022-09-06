@@ -21,6 +21,11 @@ import { LoginFormComponent } from './organisms/login-form/login-form.component'
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { PortfolioComponent } from './organisms/portfolio/portfolio.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'login', component: LoginPageComponent },
+{path: 'portfolio', component: PortfolioComponent}]
 
 @NgModule({
   declarations: [
@@ -46,7 +51,7 @@ import { PortfolioComponent } from './organisms/portfolio/portfolio.component';
     PortfolioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
