@@ -11,7 +11,7 @@ import { registerLocaleData } from '@angular/common';
   styleUrls: ['./password-form-control.component.css'],
 })
 export class PasswordFormControlComponent implements OnInit {
-  @Output() new1 = new EventEmitter<string>();
+  @Output() pwdVerify = new EventEmitter<string>();
   label: string = 'Password';
   // values = '';
   matched: boolean = true;
@@ -24,7 +24,7 @@ export class PasswordFormControlComponent implements OnInit {
 
     if (regex.test(value)) {
       this.matched = true;
-      this.new1.emit(value);
+      this.pwdVerify.emit(value);
       console.log(value + " matched");
 
       // errorBox?.style.display= "none"

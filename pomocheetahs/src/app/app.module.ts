@@ -19,6 +19,13 @@ import { PasswordFormControlComponent } from './molecules/password-form-control/
 import { UsernameFormControlComponent } from './molecules/username-form-control/username-form-control.component';
 import { LoginFormComponent } from './organisms/login-form/login-form.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { PortfolioComponent } from './organisms/portfolio/portfolio.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+{path: 'login', component: LoginPageComponent },
+{path: 'portfolio', component: LandingPageComponent}]
 
 @NgModule({
   declarations: [
@@ -39,10 +46,12 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     PasswordFormControlComponent,
     UsernameFormControlComponent,
     LoginFormComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    LandingPageComponent,
+    PortfolioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <td>Instrument ID</td>
+        <td>Quantity</td>
+        <td>Execution Price</td>
+        <td>Direction</td>
+        <td>Client Id</td>
+        <td> Order </td>
+        <td>Trade ID</td>
+        <td>Cash Value</td>
+    </thead>
+    <!--{instrumentId: 'ABC', quantity: 10, executionPrice: 100,
+   direction: 'B', clientId:'123', order: 'Placed', tradeId: 'b1', cashValue: 1000}-->
+    <tbody *ngFor="let trade of trades">
+        <td> {{trade.instrumentId}}</td>
+        <td> {{trade.quantity}} </td>
+        <td> {{trade.executionPrice}} </td>
+        <td> {{trade.direction}} </td>
+        <td> {{trade.clientId}} </td>
+
+        <td> {{trade.order}} </td>
+        <td> {{trade.tradeId}} </td>
+        <td> {{trade.cashValue}} </td>
+
+    </tbody>
+</table>
