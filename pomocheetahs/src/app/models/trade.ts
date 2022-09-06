@@ -7,6 +7,7 @@ export class Trade {
     tradeId: string = "";
     order: string ="";
     cashValue: number = -1;
+    
     constructor(
         instrumentId: string,
         quantity: number,
